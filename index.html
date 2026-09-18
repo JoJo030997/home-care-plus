@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Care Plus | Professional Home Services in PA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">Home Care Plus</div>
+            <div class="menu-toggle" id="mobile-menu">☰</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <h1>Home Care Plus</h1>
+            <p>Professional Home Services in Pennsylvania</p>
+            <p class="tagline">HVAC · Plumbing · General Property Maintenance</p>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <h2>Setting the Standard</h2>
+                <p>Home Care Plus brings hands-on experience in construction, home services, and real estate to every job. With a diverse background in residential and commercial HVAC, plumbing, electrical, and general contracting, we deliver skilled, detail-oriented service on every project. Our dual background in trades and real estate sets us apart — we don't just estimate a job, we understand it from the ground up, whether it's a furnace repair, a leaking pipe, or a full property evaluation.</p>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="card">
+                        <h3>HVAC Service & Installation</h3>
+                        <p>Reliable heating, ventilation, and air conditioning solutions. We ensure your indoor climate is comfortable year-round with professional repair and installation.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Plumbing Services</h3>
+                        <p>From minor leaks to full system installations, our expert plumbing services keep your property running smoothly and efficiently.</p>
+                    </div>
+                    <div class="card">
+                        <h3>General Property Maintenance</h3>
+                        <p>Comprehensive property upkeep tailored to your needs. We handle routine maintenance and repairs to protect and enhance your investment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-us">
+            <div class="container">
+                <h2>Why Choose Us?</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <h3>Exceptional Customer Service</h3>
+                        <p>Our team is dedicated to providing support that ensures your needs are met promptly and professionally.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Hands-On Expertise</h3>
+                        <p>Every job is handled with real trade experience, not guesswork. We know how things are built because we build them.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Tailored Solutions</h3>
+                        <p>Our services are designed to adapt to your property's needs, ensuring maximum impact and lasting results.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <h2>Get a Free Quote</h2>
+                    <p>Submit your information below and we'll reach out to discuss your project.</p>
+                </div>
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email (optional)</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Property Address</label>
+                            <input type="text" id="address" name="address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message/Description of Work Needed</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="sms-consent" name="sms-consent" required>
+                            <label for="sms-consent">By submitting this form, I consent to receive SMS messages from Home Care Plus regarding my inquiry. Message and data rates may apply. Reply STOP to opt out at any time. View our <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</label>
+                        </div>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>Phone: [YOUR PHONE NUMBER]</p>
+                <p>Email: [YOUR EMAIL]</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Home Care Plus</h3>
+                <p>HVAC · Plumbing · General Property Maintenance</p>
+                <p>Serving Pennsylvania</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Home Care Plus. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            document.getElementById('nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
