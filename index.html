@@ -82,7 +82,7 @@
                     <p>Submit your information below and we'll reach out to discuss your project.</p>
                 </div>
                 <div class="contact-form">
-                    <form action="#" method="POST">
+                    <form id="contact-form" onsubmit="return handleSubmit(event)">
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
@@ -109,6 +109,10 @@
                         </div>
                         <button type="submit" class="btn">Submit</button>
                     </form>
+                    <div id="thank-you" style="display:none; text-align:center; padding:3rem 1rem;">
+                        <h3 style="color:var(--medium-blue); margin-bottom:1rem;">Thank You!</h3>
+                        <p>Your request has been received. We will reach out to you shortly.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -142,6 +146,12 @@
     </footer>
 
     <script>
+        function handleSubmit(e) {
+            e.preventDefault();
+            document.getElementById('contact-form').style.display = 'none';
+            document.getElementById('thank-you').style.display = 'block';
+            return false;
+        }
         document.getElementById('mobile-menu').addEventListener('click', function() {
             document.getElementById('nav-links').classList.toggle('active');
         });
